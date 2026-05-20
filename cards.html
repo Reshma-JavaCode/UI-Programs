@@ -1,0 +1,67 @@
+<!DOCTYPE html><html>
+    <head>
+        <style>
+            #d1{
+                position: relative;
+                width:500px;
+                height: 600px;
+                border:2px solid black;
+            }
+            #d2,#d3,#d4,#d5,#d6{
+                width:100px;
+                height: 200px;
+                border:2px solid black;
+                position: absolute;
+                
+            }
+            #d2{
+                
+                 background-color: green;
+                transform: rotate(5deg);
+                top:80px;
+                left:90px;
+                z-index: 1;
+            }
+            #d3{
+                background-color: rgba(205, 100, 15, 0.551);
+                transform: rotate(10deg);
+                top:89px;
+                left:97px;
+                z-index: 2;
+            }
+            #d4{
+                 background-color: rgba(5, 196, 5, 0.81);
+                 transform: rotate(20deg);
+                top:101px;
+                left:112px;
+                z-index: 3;
+            }
+            #d5{
+                 background-color: rgba(179, 26, 6, 0.81);
+                 transform: rotate(30deg);
+                top:115px;
+                left:123px;
+                z-index: 4;
+            }
+            #d6{
+                 background-color: rgba(9, 125, 24, 0.81);
+                 transform: rotate(40deg);
+                top:132px;
+                left:133px;
+                z-index: 5;
+            }
+         div:hover{
+            z-index: 100;
+         }
+        </style>
+    </head>
+    <body>
+        <div id="d1">
+        <div id="d2"></div>
+        <div id="d3"></div>
+        <div id="d4"></div>
+        <div id="d5"></div>
+        <div id="d6"></div>
+        </div>
+    </body>
+</html>

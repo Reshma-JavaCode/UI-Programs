@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+           *{
+   margin:0;
+   padding:0;
+   box-sizing:border-box;
+}
+
+body{
+    background:black;
+    color:white;
+    font-family:Arial;
+}
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 50px;
+    background:#111;
+}
+
+.navbar ul{
+    display:flex;
+    list-style:none;
+    gap:30px;
+}
+
+.navbar a{
+    color:white;
+    text-decoration:none;
+    font-size:18px;
+}
+
+.navbar a:hover{
+    color:yellow;
+}
+.dropdown{
+    position:relative;
+}
+
+.dropdown-content{
+    position:absolute;
+    top:100%;
+    left:0;
+    background:#222;
+    min-width:180px;
+    display:none;
+
+   /* z-index:100;*/
+}
+
+.dropdown-content a{
+    display:block;
+    padding:12px;
+    color:white;
+    text-decoration:none;
+}
+
+.dropdown-content a:hover{
+    background:#444;
+}
+
+.dropdown:hover .dropdown-content{
+    display:block;
+}      
+
+@media screen and (min-width:320px) and (max-width:426px){
+     
+    .navbar{
+         width:100%;
+        max-width:1200px;
+        flex-direction:column;
+        text-align:center;
+            }
+            }
+</style>
+
+    </head>
+    <body>
+         <header>
+
+    <nav class="navbar">
+
+       
+        <ul>
+
+            <li><a href="#">Home</a></li>
+
+            <li><a href="#about">About</a></li>
+
+            <li><a href="timetable.html">Timetables</a></li>
+
+            <li class="dropdown">
+
+                <a href="#">Syllabus</a>
+
+                <div class="dropdown-content">
+
+                    <a href="solar_system1.html">Chapter 1</a>
+                    <a href="Navbar.html">Chapter 2</a>
+                    <a href="#">Chapter 3</a>
+
+                </div>
+
+            </li>
+
+        </ul>
+
+    </nav>
+
+</header>
+    </body>
+</html>

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+    <head>  
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+              *{
+   margin:0;
+   padding:0;
+   box-sizing:border-box;
+}
+             h1{
+                color: black;
+                font-weight: bold;
+                text-align: center;
+            }
+           
+            .solar-system{
+                position: relative;
+                width: auto;
+                height: 500px;
+               /* border: 2px solid black;*/
+
+               background-image: linear-gradient(rgba(0,0,0, 0.6),rgba(0, 0, 0, 1)),url(./solarsystem.avif);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;   
+               
+            }
+            .sun{
+                position: absolute;
+                top:50%;
+                left:50%;
+                transform: translate(-50%,-50%);
+
+                width:100px;
+                height: 100px;
+                border-radius: 50%;
+
+                 /* border: 2px solid black;*/
+                 background-image: url(./sun2.jpg);
+                 background-position: center;
+
+                box-shadow:0 0 20px 6px orange ;
+
+                background-color: orangered;
+
+                 }
+            .earth-orbit{
+                position: absolute;
+                top:50%;
+                left:50%;
+                transform: translate(-50%,-50%);
+                width:300px;
+                height: 300px;
+                border-radius: 50%;
+                border: 1px solid antiquewhite;
+
+               /*order: name dur fun delay iter-cnt;
+               animation-name: earth-rotate;
+               animation-duration: 10s;
+               animation-timing-function: linear;
+               animation-delay: 1s;
+               animation-iteration-count: infinite;
+               */
+
+               animation: earth-rotate 10s linear 1s infinite;
+               
+            }
+             .earth{
+                position: absolute;
+                top:50%;
+                left: 100%;;
+                transform: translate(-50%,-50%);
+                 /* border: 2px solid black;*/
+                width:50px;
+                height: 50px;
+                border-radius: 50%;
+                background-image: url(./earth2.jpg);
+                background-position: center;
+                background-size: cover;
+               
+                
+            }
+            .moon-orbit{
+                position: absolute;
+                top:50%;
+                left:50%;
+                transform: translate(-50%,-50%);
+                width:100px;
+                height: 100px;
+                border-radius: 50%;
+                  border: 1px solid antiquewhite;
+                animation-name: moon-rotate;
+                animation-delay: 1s;
+                animation-duration: 5s;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+            }
+            .moon{
+                position: absolute;
+                top:50%;
+                left:100%;
+                transform: translate(-50%,-50%);
+                width:25px;
+                height: 25px;
+                border-radius: 50%;
+                /* border: 2px solid black;*/
+                background-image: url(./moon2.jpg);
+                background-position: center;
+                background-size: cover;
+                background-color: bisque;
+
+                display:flex;
+                justify-content:center;
+                align-items:center;
+
+                font-weight:bold;
+                color:black;
+
+
+            }
+           @keyframes earth-rotate {
+            0%{
+                /*we need to write translate property again since
+                    when animation starts previous transform property replace with rotate only if we wont give translate here again.
+                    so,write translate for center positioning+ rotate for rotation*/
+                    
+                transform: translate(-50%,-50%) rotate(0deg);
+            }
+            100%{
+                transform: translate(-50%,-50%) rotate(360deg);
+            }
+           }
+           @keyframes moon-rotate{
+            0%{
+                transform: translate(-50%,-50%) rotate(0deg);
+            }
+            100%{
+                transform: translate(-50%,-50%) rotate(360deg);
+            }
+           }
+           .btn1 .bck-btn{
+                text-decoration: none;
+                color:white;
+                padding: 10px;
+            }
+            .btn1{
+                background-color: blue;
+                position: fixed;
+                bottom: 15px;
+                right: 10px;
+                z-index: 100;
+            }
+             .bck-btn::before{
+                content:">>" ;
+            }
+            .bck-btn::after{
+                content:"🏠" ;
+            }
+            </style>
+
+    </head>
+    <body>
+        <div class="solar-system">
+            <div class="sun"></div>
+                <div class="earth-orbit">
+            <div class="earth">
+                <div class="moon-orbit">
+                <div class="moon">
+                    </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        
+        <section id="about">
+
+    <h1>About Solar System</h1>
+    <ul>
+    <li>
+        The solar system consists of the Sun and the celestial objects
+        revolving around it. Earth revolves around the Sun while the
+        Moon revolves around Earth. The Sun is the center of the solar
+        system and provides heat and light to all planets.
+    The solar system consists of the Sun and the celestial objects
+        revolving around it. Earth revolves around the Sun while the
+        Moon revolves around Earth. The Sun is the center of the solar
+        system and provides heat and light to all planets.
+   The solar system consists of the Sun and the celestial objects
+        revolving around it. Earth revolves around the Sun while the
+        Moon revolves around Earth. The Sun is the center of the solar
+        system and provides heat and light to all planets.
+   The solar system consists of the Sun and the celestial objects
+        revolving around it. Earth revolves around the Sun while the
+        Moon revolves around Earth. The Sun is the center of the solar
+        system and provides heat and light to all planets.
+   
+    </li>
+<li>
+        The solar system consists of the Sun and the celestial objects
+        revolving around it. Earth revolves around the Sun while the
+        Moon revolves around Earth. The Sun is the center of the solar
+        system and provides heat and light to all planets.
+        The solar system consists of the Sun and the celestial objects
+        revolving around it. Earth revolves around the Sun while the
+        Moon revolves around Earth. The Sun is the center of the solar
+        system and provides heat and light to all planets.
+   The solar system consists of the Sun and the celestial objects
+        revolving around it. Earth revolves around the Sun while the
+        Moon revolves around Earth. The Sun is the center of the solar
+        system and provides heat and light to all planets.
+   
+    </li>
+<li>
+        The solar system consists of the Sun and the celestial objects
+        revolving around it. Earth revolves around the Sun while the
+        Moon revolves around Earth. The Sun is the center of the solar
+        system and provides heat and light to all planets.
+        The solar system consists of the Sun and the celestial objects
+        revolving around it. Earth revolves around the Sun while the
+        Moon revolves around Earth. The Sun is the center of the solar
+        system and provides heat and light to all planets.
+   The solar system consists of the Sun and the celestial objects
+        revolving around it. Earth revolves around the Sun while the
+        Moon revolves around Earth. The Sun is the center of the solar
+        system and provides heat and light to all planets.
+   The solar system consists of the Sun and the celestial objects
+        revolving around it. Earth revolves around the Sun while the
+        Moon revolves around Earth. The Sun is the center of the solar
+        system and provides heat and light to all planets.
+   
+    </li>
+<li>
+    The solar system consists of the Sun and the celestial objects
+        revolving around it. Earth revolves around the Sun while the
+        Moon revolves around Earth. The Sun is the center of the solar
+        system and provides heat and light to all planets.
+   The solar system consists of the Sun and the celestial objects
+        revolving around it. Earth revolves around the Sun while the
+        Moon revolves around Earth. The Sun is the center of the solar
+        system and provides heat and light to all planets.
+   The solar system consists of the Sun and the celestial objects
+        revolving around it. Earth revolves around the Sun while the
+        Moon revolves around Earth. The Sun is the center of the solar
+        system and provides heat and light to all planets.
+   
+        The solar system consists of the Sun and the celestial objects
+        revolving around it. Earth revolves around the Sun while the
+        Moon revolves around Earth. The Sun is the center of the solar
+        system and provides heat and light to all planets.
+    </li>
+</ul>
+<div class="btn1"><a href="staticweb_home1.html" class="bck-btn">Go Back</a></div>
+</section>
+    </body>
+</html>

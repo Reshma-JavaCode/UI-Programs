@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .main{
+                width:300px;
+                height: 550px;
+               
+                display:flex;
+                justify-content:center;
+                background-color: rgb(39, 38, 38);
+                position: relative;
+                
+            }
+            .col1{
+                position: absolute;
+                top:10px;
+                width:150px;
+                height: 150px;
+                border-radius: 50%;
+                
+                background-color: black;
+
+                animation:col-change1 6s linear infinite;
+                /*
+                animation-name:col-change1 ;
+                animation-duration: 6s;
+                
+                animation-timing-function: linear;
+                animation-iteration-count: infinite;
+                */
+            }
+            .col2{
+                position: absolute;
+                top:180px;
+                width:150px;
+                height: 150px;
+                border-radius: 50%;
+                
+               background-color: black;
+                 animation:col-change2 6s linear infinite;
+              /* animation-name:col-change2 ;
+                animation-duration: 6s;
+                
+                animation-timing-function: linear;
+               animation-iteration-count: infinite; */
+            }
+            .col3{
+                position: absolute;
+                top:350px;
+                width:150px;
+                height: 150px;
+                border-radius: 50%;
+                
+                background-color: black;
+                animation:col-change3 6s linear infinite;
+                /*
+                animation-name:col-change3 ;
+                animation-duration: 6s;
+                
+                animation-timing-function: linear;
+                animation-iteration-count: infinite;
+                */
+            }
+
+            @keyframes col-change1{
+                0%,33%{
+                background:red;
+                box-shadow:0 0 40px red;
+            }
+            34%,100%{
+                background:#222;
+                box-shadow:none;
+            }
+            }
+
+             @keyframes col-change2
+             {
+                0%,33%{
+                background:#222;
+                box-shadow:none;
+                 }
+
+                34%,66%{
+                background:yellow;
+                box-shadow:0 0 40px yellow;
+                }
+
+                67%,100%{
+                background:#222;
+                box-shadow:none;
+               }
+            }
+             @keyframes col-change3{
+                 0%,66%{
+                background:#222;
+                box-shadow:none;
+            }
+
+            67%,100%{
+                background:green;
+                box-shadow:0 0 40px green;
+            }
+            }
+        </style>
+    </head>
+    <body>
+            <div class="main">
+                <div class="col1"></div>
+                <div class="col2"></div>
+                <div class="col3"></div>
+            </div>
+    </body>
+</html>

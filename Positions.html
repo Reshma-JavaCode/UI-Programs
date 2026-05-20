@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .div1{
+                width:600px;
+                height: 400px;
+                border: 2px solid black;
+              /* position: relative;*/
+                
+            }
+            .d2{
+                width:200px;
+                height: 200px;
+                background-color: red;
+                color: white;
+                position: absolute;
+                top:0px;
+                left:300px;
+
+            }
+            .d3{
+                width:200px;
+                height: 200px;
+               background-color: blue;
+               color: white;
+                position: relative;
+                top:0px;
+                left:100px;
+                
+            }
+            .d1{
+                 width:600px;
+                height: 400px;
+                border: 2px solid yellow;
+                
+            }
+        </style>
+    </head>
+    <body>
+        <div class="d1"></div>
+        <div class="div1">
+            <div class="d2"> absolute</div>
+            <div class="d3">relative</div>
+        </div>
+    </body>
+</html>

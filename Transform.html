@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            #div1{
+                position: relative;
+                width:100%;
+                height: 300px;
+                
+            }
+            @keyframes movement {
+                
+              0%  {
+                    top:0%;
+                    left:0%;
+                }
+               
+                100%{
+                    top:0%;
+                    left:100%;
+                }
+            }
+             #img1{
+            width:300px;
+            position: absolute;
+           
+            transform: scaleX(-1);
+            animation-name: movement;
+            animation-duration: 6s;
+            animation-iteration-count: infinite;
+            
+        }
+
+        </style>
+        
+    </head>
+    <body>
+        <div id="div1"><img src="bike1.png" id="img1"></div></div>
+        
+    </body>
+</html>

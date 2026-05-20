@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+    <head>
+        <style>
+            body{
+                font-family: arial,sans-serif;
+            }
+            /****HERO IMAGE*********/
+            .hero{
+                position: relative;
+                
+                background-image: linear-gradient(to right,rgba(0, 0, 0, 0.8)),url(hill.jpg);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                z-index: 1;
+                padding-left: 25px;
+                padding-right: 25px;
+                height: 500px;
+            }
+            /****navigation bars *********/
+            .navs{
+                
+                z-index: 5; 
+                display: flex;
+                justify-content: space-between;
+                align-items: center; 
+                  
+            }
+            .navs h3{
+                color: white;
+            }
+            nav a{
+                text-decoration: none;
+                color: white;
+                font-size: 10px;
+                margin-left:20px;
+            } 
+            /****content on hero IMAGE*********/
+            .content{
+                position: absolute;
+                z-index: 3; 
+                top:30%;
+                left:8%;
+                color: white;
+            }
+            .btn1{
+                padding:10px 20px;
+                background: rgb(232, 79, 79);
+                color: white;
+                border:1px solid white;
+                border-radius: 6px;
+                z-index: 2;
+            }
+            .content .p1{
+                
+                font-size: 12px;
+                letter-spacing: 1px;
+                z-index: 4;
+            }
+            .content .p2{
+                font-size: 12px; 
+            }  
+        </style>
+    </head>
+    <body>
+        <div class="hero">
+        <nav class="navs">
+            
+                <h3>TRAVELX</h3>
+                <nav>
+                    <a href="#Home">HOME</a>
+                    <a href="#Destination">DESTINATION</a>
+                    <a href="#about">ABOUT</a>
+                    <a href="#blog">BLOG</a>
+                    <a href="#contact">CONTACT</a>
+                </nav>
+            
+            </div>
+            <div class="content">
+                <p class="p1">DISCOVER THE WORLD</p>
+                <h1>ADVENTURE<BR> AWAITS</h1>
+                    <p class="p2">Explore breathtaking destinations and<br>create unforgettable memories.</p>
+                    <button type="submit" class="btn1">EXPLORE NOW</button>
+            </div>
+        </div>
+    </body>
+    </html>

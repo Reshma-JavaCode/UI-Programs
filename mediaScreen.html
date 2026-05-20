@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width , initial-scale=1.0">
+        <style>
+            *{
+                padding: 0;
+                margin:0;
+                box-sizing: border-box;
+            }
+             .outerdiv{ 
+                width: 100%;
+                height: auto;
+                margin-bottom: 10px;
+            }
+            .innerdiv{
+              /*  font-size: large;*/
+              display: flex;
+              align-items: center;
+              gap: 20px;
+            }
+            img{
+                float: left;
+                width:300px;
+                height: 200px;
+                margin-right: 10px;
+            }
+
+            /****remember 1st write big screen than small screen media like 768 then 425 mobile view****/
+            /***************TAB VIEW************************************/
+           @media screen and (max-width:768px) {
+                
+                .innerdiv,.outerdiv{
+                    background-color: wheat;
+                    color: red;
+                }
+
+               .innerdiv img{ 
+                    width:50%;  /********note********/
+                    height: 200px;
+                }
+            }
+            
+            /***************Mobile VIEW************************************/
+            @media screen and (max-width:426px){
+                .outerdiv{
+                    background-color: green;
+                    color: white;
+                }
+                .innerdiv{
+                    background-color: rgb(96, 84, 164);
+                    color:white;
+                    
+                }
+                
+                .innerdiv img{
+                    width:100%;  /******mandatory*****/
+                    height: 200px;
+                }
+            }
+            
+           
+        </style>
+    </head>
+    <body>
+        <div class="outerdiv">
+            <p>Pseudo-elements in CSS are keywords used to style specific parts of an element, rather than the entire element itself. They allow you to target portions like the first letter, first line, or even insert virtual content before/after an element.
+            Pseudo-elements in CSS are keywords used to style specific parts of an element, rather than the entire element itself. They allow you to target portions like the first letter, first line, or even insert virtual content before/after an element.
+           </p>
+        </div>
+            <div class="innerdiv">
+                <p><img src="travel2.jpg" alt="aeroplane image">
+                1.Pseudo-elements in CSS are keywords used to style specific parts of an element, rather than the entire element itself. They allow you to target portions like the first letter, first line, or even insert virtual content before/after an element.
+                Pseudo-elements in CSS are keywords used to style specific parts of an element, rather than the entire element itself. They allow you to target portions like the first letter, first line, or even insert virtual content before/after an element.
+                Pseudo-elements in CSS are keywords used to style specific parts of an element, rather than the entire element itself. They allow you to target portions like the first letter, first line, or even insert virtual content before/after an element.
+                Pseudo-elements in CSS are keywords used to style specific parts of an element, rather than the entire element itself. They allow you to target portions like the first letter, first line, or even insert virtual content before/after an element.2.Pseudo-elements in CSS are keywords used to style specific parts of an element, rather than the entire element itself. They allow you to target portions like the first letter, first line, or even insert virtual content before/after an element.
+                Pseudo-elements in CSS are keywords used to style specific parts of an element, rather than the entire element itself. They allow you to target portions like the first letter, first line, or even insert virtual content before/after an element.2.Pseudo-elements in CSS are keywords used to style specific parts of an element, rather than the entire element itself. They allow you to target portions like the first letter, first line, or even insert virtual content before/after an element.Pseudo-elements in CSS are keywords used to style specific parts of an element, rather than the entire element itself. They allow you to target portions like the first letter, first line, or even insert virtual content before/after an element.2.Pseudo-elements in CSS are keywords used to style specific parts of an element, rather than the entire element itself. They allow you to target portions like the first letter, first line, or even insert virtual content before/after an element.
+                </p>
+            
+        </div>
+    </body>
+    
+</html>

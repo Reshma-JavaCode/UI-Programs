@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            *{
+   margin:0;
+   padding:0;
+   box-sizing:border-box;
+}
+            .main{
+                text-align: center;
+                
+            }
+            .main th{
+                height: 40px;
+            }
+tr:nth-child(4n),tr:nth-child(6n){
+background-color:#78b2cd;
+color: white;
+height: 50px;
+text-align: center;
+font-weight: bold;
+}
+tr:last-child{
+background-color:rgb(219, 232, 235);
+color: Red;
+height: 50px;
+text-align: center;
+}
+tr:first-child{
+background-color:Yellow;
+color: Red;
+}
+.btn1 .bck-btn{
+                text-decoration: none;
+                color:white;
+                
+            }
+            .btn1{
+                background-color: blue;
+                position: fixed;
+                bottom: 15px;
+                right: 10px;
+                 padding:10px 7px;
+                z-index: 100;
+            }
+             .bck-btn::before{
+                content:">>" ;
+            }
+            .bck-btn::after{
+                content:"🏠" ;
+            }
+            @media screen and (max-width:426px){
+                 h1{
+                    font-size: medium;
+                 }
+                
+            }
+        </style>
+    </head>
+    <body>
+        <section id="timetable" class="tt">
+
+    <h1>Class-12 Timetable</h1>
+
+    <table border=1 style="width:100%" class="main">
+<tr>
+    <th>Timings</th>
+    <th>Monday</th>
+    <th>Tuesday</th>
+    <th>Wednesday</th>
+    <th>Thursday</th>
+    <th>Friday</th>
+    <th>Saturday</th>
+  </tr>
+  
+  <tr>
+    <td>9am-10am</td>
+    
+	<TD>C LANG</TD>
+    <TD>C++</TD>
+    <td>HTML</td>
+    <td>jAVA</td>
+    <td>HTML</td>
+    <td>DSA</td>
+  </tr>
+  <tr>
+    <td>10AM-11AM</td>
+    <TD>C LANG</TD>
+    
+    <td>HTML</td>
+    <TD>C++</TD>
+    <td>jAVA</td>
+    <td>HTML</td>
+    <td>DSA</td>
+  </tr>
+  <tr>
+    <td>11am-11:15am</td>
+    <td colspan="6">BREAK TIME</td>
+      </tr>
+  <tr>
+    <td>12.15pm-1.15pm</td>
+    <TD>C LANG</TD>
+    <TD>C++</TD>
+    <td>HTML</td>
+    <td>jAVA</td>
+    <td>HTML</td>
+    <td>DSA</td>
+  </tr>
+<tr>
+ <td>1.15pm-2pm</td>
+<td colspan="6">LUNCH TIME</td>
+</tr>
+ <tr>
+   <td>2pm-4pm</td>
+    <td colspan="6">STUDY HOURS </td>
+  </tr>
+   
+</table>
+<div class="btn1"><a href="staticweb_home1.html" class="bck-btn">Go Back</a></div>
+</section>
+    </body>
+</html>

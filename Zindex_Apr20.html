@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <style>
+            .div1{
+                background-color: blue;
+                width: 400px;
+                height: 400px;
+                  position: absolute;
+                  top:200px;
+                  left:250px;  
+                 z-index:3;
+            }
+            .div2{
+                background-color: green;
+                width: 400px;
+                height: 400px;
+                position: absolute;
+                top:300px;
+                left:150px;
+                z-index:2;
+            }
+            .div3{
+                background-color: white;
+                width: 400px;
+                height: 400px;
+                position: absolute;
+                top:400px;
+                left:100px;
+                z-index: 1;    
+            }
+            button{
+                color: white;
+                background-color: blue;
+                float: right;
+                padding: 5px;
+                
+            }
+            div:hover
+            {
+                z-index: 100;
+            }
+            div button:hover{
+                background-color: green;
+            }
+            .div5{
+                background-color:rgba(0,0,0, 0.9);
+                width:auto;
+                height: 500px;
+               
+            }
+             .div6{
+                background-color:yellow;
+                width:auto;
+                height: 500px;
+               opacity: 0.5;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="div1"></div>
+                <div class="div2"></div>
+                        <div class="div3"></div>
+                        <div><button type="submit">SUBMIT</button></div>
+                        <div class="div5">Hello Hai Hello  Hello </div>
+                        <div class="div6">Hello Hello Hello Hello </div>
+                        
+
+    </body>
+</html>
